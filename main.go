@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-
+	viper.AutomaticEnv()
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		// url := "https://onesignal.com/api/v1/notifications"
 		// fmt.Println("URL:>", url)
