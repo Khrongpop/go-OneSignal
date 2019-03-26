@@ -17,9 +17,9 @@ func main() {
 	APIKEY := viper.GetString("OSAPIKEY")
 	var jsonStr = []byte(`{
 		"app_id": "` + appID + `",
-		"included_segments": ["All"],
+		"include_player_ids": ["3ca9a849-bdf7-4986-afea-89bf18c94b6b"],
 		"data": {"foo": "bar"},
-		"contents": {"en": "สัวสดี"}
+		"contents": {"en": "kuyyyyy2323"}
 	  }`)
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 	req.Header.Set("Authorization", "Basic "+APIKEY)
