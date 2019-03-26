@@ -38,3 +38,14 @@ func main() {
 	fmt.Println("response Body:", string(body))
 	fmt.Print(`Hello go`)
 }
+
+func genPlayerIDS(arry []string) string {
+	mySTR := ``
+	for i, str := range arry {
+		mySTR = mySTR + `'` + str + `'`
+		if i < len(arry)-1 {
+			mySTR = mySTR + `,`
+		}
+	}
+	return mySTR
+}
